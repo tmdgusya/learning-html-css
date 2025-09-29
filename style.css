@@ -1,0 +1,17 @@
+* {
+  font-weight: bold;
+}
+
+/* class 선택자 */
+/* tag 보다 우선순위 높음*/
+p.blue {
+  color: aqua;
+}
+
+p.blue.dark{
+  color: blue;
+}
+
+#red {
+  color: red;
+}

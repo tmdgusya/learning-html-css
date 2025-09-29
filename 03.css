@@ -1,0 +1,44 @@
+.outer li {
+  color: olivedrab;
+}
+
+.outer > li {
+  color: dodgerblue;
+}
+
+.outer > li li {
+  text-decoration: underline;
+}
+
+/*starter 뒤에 따르는 li 들을 타겟팅*/
+.starter ~ li {
+  color: aqua;
+}
+
+/*starter 바로 뒤에 따르는 li 만 타겟팅*/
+.starter + li {
+  font-weight: bold;
+}
+
+/*가상 클래스*/
+ol li:first-child,
+ol li:last-child {
+  color: yellowgreen;
+}
+
+/* 마지막이 아닌 li 들에만 line-through 효과 */
+.outer > li:not(:last-child) {
+  text-decoration: line-through;
+}
+
+/* n 번째 요소 선택해보기 */
+ol li:nth-child(3) {
+  font-weight: bold;
+  color: deeppink;
+}
+
+li:hover,
+ol li:nth-child(3):hover {
+  font-weight: bold;
+  color: azure;
+}
